@@ -76,6 +76,7 @@ for (i=0; i<lines.length; i++) {
 
 //Exercise 3
 //Write a JavaScript program to compute the largest product of three integers from a given list of integers.
+//From this everything will be loaded to git
 
 let product = [];
 let count = 0;
