@@ -27,6 +27,7 @@ Write a JavaScript program to find the list of words that are longer than n from
 // Exercise 1: 
 
 const fs = require("fs");
+const { start } = require("repl");
 const data = fs.readFileSync("ex1numbers.txt", "utf8");
 
 // the + looks for both criteria new space and new line and actions that. 
@@ -104,9 +105,3 @@ function productNum (product) {
 
     }   
 }
-
-//finally this throws out the all the possible products.
-console.log(product);
-
-
-
