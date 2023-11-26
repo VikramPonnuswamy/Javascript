@@ -78,9 +78,15 @@ for (i=0; i<lines.length; i++) {
 //Write a JavaScript program to compute the largest product of three integers from a given list of integers.
 //From this everything will be loaded to git
 
+//Creating an array to store the different multiple products.
 let product = [];
+//Created a count to store each value in the next index in the array.
 let count = 0;
+//calling the function with product passed through as the parameter.
 productNum(product);
+
+//declaring the function for the loop of multiplying the each number by every number in the list before moving to second number in the array of numbers. 
+//For this we needed two for loop. One to take the a value and nested loop inside to take the value and multiple through that value with every integer in the file. Then exit out before moving to the next value and that is then enters the new nested loop.
 
 function productNum (product) {
     for (i=0; i<lines.length; i++) {
@@ -99,6 +105,7 @@ function productNum (product) {
     }   
 }
 
+//finally this throws out the all the possible products.
 console.log(product);
 
 
