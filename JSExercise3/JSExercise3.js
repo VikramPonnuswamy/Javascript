@@ -135,7 +135,7 @@ let productValue = [];
 //for loop to go through each item in the items array and multiply by k. 
 
 for (i=0;i<items.length;i++) {
-    productValue[i] = multiplier * items[i];
+    productValue[i] = k * items[i];
 }
 
 //finally output the array to give out the answers from the array.
