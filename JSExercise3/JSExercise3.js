@@ -155,3 +155,31 @@ for (i=0;i<items.length;i++) {
 
 console.log(finalvalue);
 
+////////Exercise 6
+//////Write a JavaScript program to find the list of words that are longer than n from a given string.
+
+//storing a string to variable
+let wordsExercie6 =  'Write a JavaScript program to find the list of words that are longer than n from a given string';
+//splitting the string into words and storing it an array. word is detected everytime it reads a space. 
+let wordArray = wordsExercie6.split(" ");
+//setting my n value for comparison with number of word characters
+let n = 5;
+//new array to store all the words with characters > n. 
+let newWordArray = [];
+//setting the count to increase in the each newWordArray as it stores a word
+let newCount = 0;
+
+//for loop to go through each word in the wordArray
+for(i=0;i<wordArray.length;i++) {
+
+    //if loop to validate if word parsing through is > n. if so it is taking it and storing it in the newWordArray and increasing count. else it will just go to the word in the wordArray. 
+    if (wordArray[i].length > n) {
+        
+        newWordArray[newCount] = wordArray[i];
+        newCount ++;
+        
+    }
+}
+//After the for loop this is printing my newWordArray with all the words that has characters > 5
+console.log(newWordArray);
+
