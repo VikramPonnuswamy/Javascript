@@ -83,7 +83,7 @@ for (let o = 1; o < numA; o++) {
 
 //Question 8: The sum of digits of a number is found by adding all the digits of a number together. For example, the sum of digits of 234 is 2 + 3 + 4 = 9. Write some code to take a numerical value and print out the sum of digits of that number.
 
-var number = 234;
+//var number = 234;
 
 
 // This is a perfectly acceptable solution; a "for" loop isn't ideal, but we've not seen "while" yet in the module, so let's find a way to make "for" work:
