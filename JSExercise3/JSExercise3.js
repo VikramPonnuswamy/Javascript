@@ -106,7 +106,6 @@ function productNum (product) {
     }   
 }
 
-console.log(product);
 
 //now we want to sort it in the descding order to get top 3 highest values in index 0,1,2. 
 //This sort requires a function which needs it to actually sort in the descending order. Otherwise it'll sort with the first value. for example when comparing 25 and 100, it'll place the 25 as the highest since it's 2 is greater than 1. Hence the function.
@@ -121,3 +120,23 @@ product.sort(function(a,b){return b-a});
 console.log(product[0],product[1], product[2]);
 
 
+
+/////////////Exercise 4
+///////Write a JavaScript program to multiply all the items in a list by the same value
+//ANSWERS: 200, 10, 50, 26, 12.5 where k is 2 and items are 100, 5, 25, 13, 6.25
+
+//storing a single value for multiplying
+let k = 2;
+//array of items to be multiplied by k
+let items = [100, 5, 25, 13, 6.25];
+//new array to store the multiplied value
+let productValue = [];
+
+//for loop to go through each item in the items array and multiply by k. 
+
+for (i=0;i<items.length;i++) {
+    productValue[i] = multiplier * items[i];
+}
+
+//finally output the array to give out the answers from the array.
+console.log(productValue);
