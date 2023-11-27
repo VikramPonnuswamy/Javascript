@@ -105,3 +105,19 @@ function productNum (product) {
 
     }   
 }
+
+console.log(product);
+
+//now we want to sort it in the descding order to get top 3 highest values in index 0,1,2. 
+//This sort requires a function which needs it to actually sort in the descending order. Otherwise it'll sort with the first value. for example when comparing 25 and 100, it'll place the 25 as the highest since it's 2 is greater than 1. Hence the function.
+
+// If the compare function returns a negative value, a comes before b.
+// If it returns a positive value, b comes before a.
+// If it returns 0, the order remains unchanged.
+//b-a does the high to low where as a-b does the lowest to high
+
+product.sort(function(a,b){return b-a});
+//This outputs the highest 3 integers after sorting..
+console.log(product[0],product[1], product[2]);
+
+
