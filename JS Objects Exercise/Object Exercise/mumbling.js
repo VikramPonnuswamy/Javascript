@@ -19,7 +19,7 @@ function mumble(input) {
     //Final string combined for use. 
     let newString = '';
 
-
+    
     //Initial for loop to go through the array of the input. Store the value as uppercase in the new array. Then the same value is passed through a while loop and iterated by the position of the input array and concat the value to the item in the newArray index. 
     for (i=0;i<stringArry.length;i++) {
         newArray[i] = stringArry[i].toUpperCase();
@@ -32,7 +32,7 @@ function mumble(input) {
         }
 
     }
-
+    
     //All your values are obtained for the input and we need to know concat all the items in the array and return the string. This is done by looping through ever single item in the newArray. 
     //The if statement checks if the newString is empty, to avoid getting a '-' for the first loop. If it is it stores the value of the first item in the Array. 
     //the j+1 nad length-1 deal with the logic to avoid doing the if statement again. 
