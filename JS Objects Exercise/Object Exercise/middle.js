@@ -3,6 +3,8 @@ function middle(input) {
     let inputArray = input.split("");
     let middleValue = inputArray.length / 2;
 
+    console.log(middleValue);
+    
     if (inputArray.length % 2 == 0) {
         
         return inputArray[middleValue-1] + inputArray[middleValue];
